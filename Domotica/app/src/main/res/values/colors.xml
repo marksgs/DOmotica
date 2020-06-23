@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="texto1">#ffffff</color>
+    <color name="texto2">#595a5b</color>
+    <color name="fondo">#8fb2ea</color>
+    <color name="Notif">#21ce2c</color>
+    <color name="switches">#263244</color>
+    <color name="switches2">#778dad</color>
+</resources>

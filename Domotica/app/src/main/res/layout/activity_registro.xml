@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registro"
+    android:background="#00447c">
+
+    <EditText
+        android:id="@+id/new_usr"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_marginTop="100sp"
+        android:layout_centerHorizontal="true"
+        android:hint="Usuario"/>
+
+    <EditText
+        android:id="@+id/new_mail"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/new_usr"
+        android:layout_marginTop="20sp"
+        android:hint="Mail"
+        />
+    <EditText
+        android:id="@+id/new_psw"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:inputType="textPassword"
+        android:hint="Contraseña"
+        android:layout_below="@+id/new_mail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        />
+    
+    <EditText
+        android:id="@+id/confirm_psw"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:inputType="textPassword"
+        android:hint="Confirma contraseña"
+        android:layout_below="@+id/new_psw"
+        android:layout_marginTop="20sp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/Enviar_datos"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="Enviar"
+        android:textColor="#54536f"
+        android:background="@color/fondo"
+        android:layout_below="@+id/confirm_psw"
+        android:layout_marginTop="20sp"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Varios"
+    android:background="@color/fondo">
+
+    <TextView
+        android:id="@+id/actdesact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Activar/Desactivar\nPresencia y aperturas"
+        android:textColor="@color/texto1"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/boton_actdesact"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="45mm"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/texto1"
+        />
+    <TextView
+        android:id="@+id/gasTexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valvula de gas"
+        android:textSize="20sp"
+        android:layout_below="@+id/actdesact"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/texto1"/>
+    <Button
+        android:id="@+id/botonGas"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/boton_actdesact"
+        android:layout_marginTop="33dp"
+        android:layout_marginLeft="45mm"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/texto1"/>
+
+    <TextView
+        android:id="@+id/activacionML"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gasTexto"
+        android:text="Activar/Desactivar\nMachine learning"
+        android:textColor="@color/texto1"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"/>
+    <Button
+        android:id="@+id/switch_activacionML"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/botonGas"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="45mm"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/texto1"/>
+
+    <Button
+        android:id="@+id/cerrarSesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cerrar sesion"
+        android:layout_below="@id/activacionML"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/texto1"
+        android:layout_marginTop="20sp"/>
+</RelativeLayout>

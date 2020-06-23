@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#00447c">
+
+    <EditText
+        android:id="@+id/usuario"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="135dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Usuario"
+        android:background="#ffffff"/>
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_marginTop="195dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Contraseña"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/iniciar_sesion"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="Iniciar sesión"
+        android:textColor="#54536f"
+        android:background="#7ab4df"
+        android:layout_marginTop="230dp"
+        android:layout_marginLeft="115dp"
+        />
+    <Button
+        android:id="@+id/crear_cuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="Crear cuenta"
+        android:textColor="@color/texto2"
+        android:layout_marginTop="290dp"
+        android:layout_marginLeft="115dp"
+        android:clickable="true"
+        android:background="#7ab4df"
+        />
+
+</RelativeLayout>

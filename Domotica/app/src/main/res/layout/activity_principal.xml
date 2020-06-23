@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Principal"
+    android:background="@color/fondo">
+
+    <ImageButton
+        android:id="@+id/Luces"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/foco"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:padding="2dp"
+        android:layout_marginTop="3mm"
+        android:layout_marginLeft="2mm"
+        />
+
+    <ImageButton
+        android:id="@+id/Cortinas"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_toRightOf="@+id/Luces"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/persiana"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:padding="2dp"
+        android:layout_marginTop="3mm"/>
+
+    <ImageButton
+        android:id="@+id/Accesos"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_toRightOf="@+id/Cortinas"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3mm"
+        android:src="@drawable/aperturas"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"/>
+
+    <ImageButton
+        android:id="@+id/Camara"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/texto_luces"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/camara"
+        android:scaleType="fitCenter"
+        android:padding="2dp"
+        android:adjustViewBounds="true"/>
+
+    <ImageButton
+        android:id="@+id/Notificaciones"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/notificacion"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:padding="2dp"
+        android:layout_below="@+id/texto_cortinas"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/Camara"
+        android:layout_marginLeft="15dp"/>
+
+    <ImageButton
+        android:id="@+id/Varios"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ajustes"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:padding="2dp"
+        android:layout_toRightOf="@id/Notificaciones"
+        android:layout_below="@+id/texto_accesos"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"/>
+
+    <TextView
+        android:id="@+id/texto_luces"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Luces"
+        android:layout_marginLeft="5.6mm"
+        android:text="Luces"
+        android:textColor="@color/texto1"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/texto_cortinas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Cortinas"
+        android:layout_marginLeft="21.5mm"
+        android:text="Cortinas"
+        android:textColor="@color/texto1"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/texto_accesos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Accesos"
+        android:layout_marginLeft="38.55mm"
+        android:text="Accesos"
+        android:textColor="@color/texto1"
+        android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/texto_camara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Camara"
+            android:textSize="20sp"
+            android:textColor="@color/texto1"
+            android:text="Camara"
+            android:layout_marginLeft="2.7mm"/>
+    <TextView
+        android:id="@+id/texto_notificaciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notificaciones"
+        android:textColor="@color/texto1"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/texto_camara"
+        android:layout_marginLeft="25dp"
+        android:layout_below="@+id/Notificaciones"/>
+
+    <TextView
+        android:id="@+id/textoVarios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Varios"
+        android:textColor="@color/texto1"
+        android:layout_below="@id/Varios"
+        android:layout_toRightOf="@id/texto_notificaciones"
+        android:layout_marginLeft="30dp"/>
+
+</RelativeLayout>
